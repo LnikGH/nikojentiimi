@@ -4,7 +4,7 @@ from questions import quiz
 score = 0
 
 def check_answer(player_answer, question):
-    if player_answer == quiz[question]['answer']:
+    if player_answer.lower() == quiz[question]['answer']:
         print("Your answer was correct!")
         return True
     print("Your answer was incorrect!")
@@ -28,3 +28,12 @@ while True:
             score +=1
     
     print(f"You reached the end. Your score is {score} out of {len(quiz)}")
+
+    if score == len(quiz):
+        print("You got everything correct, extra question!")
+        final = input("Is it ok to put pineapple on a pizza? (yes/no)")
+        if final.lower() == "no":
+            print("That is the correct answer. You win!")
+        else:
+            print("Go away!")
+            break
