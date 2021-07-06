@@ -1,4 +1,15 @@
+#from typing_extensions import TypeVarTuple
 from questions import quiz
+
+score = 0
+
+def check_answer(player_answer, question):
+    if player_answer == quiz[question]['answer']:
+        print("Your answer was correct!")
+        return True
+    print("Your answer was incorrect!")
+    return False 
+
 
 while True:
 
@@ -15,3 +26,5 @@ while True:
         check = check_answer(answer, question)
         if check:
             score +=1
+    
+    print(f"You reached the end. Your score is {score} out of {len(quiz)}")
