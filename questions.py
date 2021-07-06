@@ -4,7 +4,7 @@ quiz = {
         "answer": "f1 micro"
     },
     2: {
-        "question": "Which is the HTTPS traffic port",
+        "question": "Which is the HTTPS traffic port?",
         "answer": "443"
     }
 }
