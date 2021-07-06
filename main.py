@@ -31,7 +31,7 @@ while True:
 
     if score == len(quiz):
         print("You got everything correct, extra question!")
-        final = input("Is it ok to put pineapple on a pizza? (yes/no)")
+        final = input("Is it ok to put pineapple on a pizza? (yes/no): ")
         if final.lower() == "no":
             print("That is the correct answer. You win!")
         else:
