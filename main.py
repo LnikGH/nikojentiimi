@@ -15,7 +15,7 @@ while True:
 
     playing = str(input("Do you want to play a game? (y/n)"))
 
-    if playing == "n":
+    if playing != "y":
         break
 
     score = 0
